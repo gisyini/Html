@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وكالة الأسود</title>
+    <style>
+        /* الأساسيات */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101010;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            background-color: #181818;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            color: #FFD700;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        /* تنسيق الفيديو الصغير */
+        #header-video {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        /* تنسيق اسم "تحسين العراقي" مع تأثير الألوان المتحركة */
+        #tahseen-name {
+            font-size: 24px;
+            font-weight: bold;
+            animation: color-change 3s infinite;
+        }
+
+        @keyframes color-change {
+            0% { color: blue; }
+            25% { color: green; }
+            50% { color: red; }
+            75% { color: yellow; }
+            100% { color: blue; }
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* تنسيق الأقسام */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        /* قسم الخدمات */
+        .service {
+            background: #282828;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 300px;
+            color: #fff;
+        }
+
+        .service h3 {
+            color: #FFD700;
+        }
+
+        /* قسم معرض الأعمال */
+        .portfolio-item {
+            background: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 300px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .portfolio-item h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-image,
+        .portfolio-video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* تنسيق نموذج التواصل */
+        form label {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: none;
+            background-color: #282828;
+            color: #fff;
+        }
+
+        form button {
+            background-color: #FFD700;
+            color: #101010;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر مع فيديو صغير واسم متحرك -->
+    <header>
+        <video id="header-video" autoplay muted loop>
+            <source src="k.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <h1>وكالة الأسود</h1>
+        <span id="tahseen-name">تحسين العراقي</span>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#portfolio">معرض الأعمال</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>أهلاً بكم في وكالة الأسود</h2>
+        <p>أهلاً وسهلاً بكم لمشاهدة مقاطع فقراتنا ودعمنا في الوكالة. يرجى الانتقال لمعرض الأعمال.</p>
+    </section>
+
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>وكالة الأسود هي وكالة متخصصة في تقديم الحلول الإبداعية.</p>
+    </section>
+
+    <section id="services">
+        <h2>إدارة الوكالة</h2>
+        <div class="service">
+            <h3>لادمن تحسين العرقي</h3>
+            <p>مدير وكالة الأسود</p>
+        </div>
+        <div class="service">
+            <h3>تسجيل المضيفين</h3>
+            <p>أهلاً وسهلاً بكم.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>معرض الأعمال</h2>
+        
+        <div class="portfolio-item">
+            <h3>مشروع 1</h3>
+            <img src="image1.jpg" alt="صورة المشروع 1" class="portfolio-image">
+            <img src="image2.jpg" alt="صورة أخرى للمشروع 1" class="portfolio-image">
+        </div>
+
+        <div class="portfolio-item">
+            <h3>مشروع 2</h3>
+            <video controls class="portfolio-video">
+                <source src="video1.mp4" type="video/mp4">
+                المتصفح لا يدعم تشغيل الفيديو.
+            </video>
+            <video controls class="portfolio-video">
+                <source src="video2.mp4" type="video/mp4">
+                المتصفح لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+</body>
+</html>
